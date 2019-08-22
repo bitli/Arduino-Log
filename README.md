@@ -101,10 +101,11 @@ where the format string can be used to format the log variables
 * %s	display as string (char*)
 * %S    display as string from flash memory (__FlashStringHelper* or char[] PROGMEM)
 * %c	display as single character
+* %C	replace with a printable character or \xHH (HH is hex code of non printable character)
 * %d	display as integer value
 * %l	display as long value
 * %x	display as hexadecimal value
-* %X	display as hexadecimal value prefixed by `0x`
+* %X	display as hexadecimal value prefixed by `0x` and leading zeroes
 * %b	display as  binary number
 * %B	display as  binary number, prefixed by `0b'
 * %t	display as boolean value "t" or "f"

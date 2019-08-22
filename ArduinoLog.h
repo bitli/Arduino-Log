@@ -57,10 +57,11 @@ typedef void (*printfunction)(Print*);
  * 
  * %s	replace with an string (char*)
  * %c	replace with an character
+ * %C	replace with a printable character or \xHH (HH is hex code of non printable character)
  * %d	replace with an integer value
  * %l	replace with an long value
- * %x	replace and convert integer value into hex
- * %X	like %x but combine with 0x123AB
+ * %x	replace and convert integer value into hex 
+ * %X	display as hexadecimal value prefixed by `0x` and leading zeroes
  * %b	replace and convert integer value into binary
  * %B	like %x but combine with 0b10100011
  * %t	replace and convert boolean value into "t" or "f"
